@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //高频鄙视题: 
+    //定义三个函数，分别可以去掉字符串开头，结尾，以及同时去掉开头结尾的空字符。
+    //想实现去掉一个字符串开头(左边)的空字符
+    // function trimLeft(str){
+    //   //其实就是把原字符串中开头的一组空字符替换为""
+    //   return str.replace(/^\s+/,"");
+    //   //*，连没有空格的情况也会匹配一次，但是，如果没有空格，是没必要执行替换操作的！
+    //   //+，只有有空格时，才匹配，才有必要执行替换操作
+    // }
+    // //想实现去掉一个字符串结尾(右边)的空字符
+    // function trimRight(str){
+    //   return str.replace(/\s+$/,"");
+    // }
+    // //想实现同时去掉开头和结尾的空字符
+    // function trim(str){
+    //   return str.replace(/^\s+|\s+$/g,"")
+    // }
+    // var str="   zhang    dong    ";
+    // console.log(trimLeft(str));
+    // //"zhang    dong    "
+    // console.log(trimRight(str));
+    // //"   zhang    dong"
+    // console.log(trim(str));
+    // //"zhang    dong"
+
+    //其实: ES5~ES6等新标准中已经内置了三个trim函数！
+    //功能一样
+    //但是，必须按调用原生函数的格式调用: 
+    //字符串.函数名()
+    var str="   zhang    dong    ";
+    console.log(str.trimLeft());
+    //"zhang    dong    "
+    console.log(str.trimRight());
+    //"   zhang    dong"
+    console.log(str.trim());
+    //"zhang    dong"
+  </script>
+</body>
+</html>

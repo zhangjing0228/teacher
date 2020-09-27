@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var arr=[1,2,3,4,5];
+    arr.reverse();
+    console.log(arr);
+
+    //高频鄙视题： 
+    //颠倒一个字符串: 
+    var str="hello";
+    //先将字符串打散为字符数组: 
+    var arr=str.split("");
+    console.log(arr);
+    //翻转数组中的字母
+    arr.reverse();
+    console.log(arr);
+    //将数组中的字符无缝拼接为一个字符串
+    str=arr.join("");
+    //复习数组函数:join和toString
+    console.log(str);//olleh
+  </script>
+</body>
+</html>

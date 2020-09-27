@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var email="zhangdong@tedu.cn";
+    //想获得电子邮件中的用户名和域名
+    //所以，要按@切割
+    var arr=email.split("@");
+    console.log(arr);
+    //arr:["zhangdong","tedu.cn"]
+    //          0          1
+    console.log(`用户名：${arr[0]}`);
+    console.log(`域名: ${arr[1]}`);
+
+    var str="no zuo no die";
+    //希望将一条英文的句子切割为单词的数组
+    //所以，按空格切割
+    var arr=str.split(" ");
+    console.log(arr);
+  </script>
+</body>
+</html>
